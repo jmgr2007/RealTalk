@@ -1,0 +1,57 @@
+author: jmgr2007
+website:
+name: RealTalk
+main: jmgr2007.bukkit.RealTalk.RealTalk
+database: false
+version: 1.6.1
+
+commands:
+  rtalk:
+    description: 'admin commands'
+    usege: /<command> for help
+  message:
+    description: send a message
+    permission: real.talk.message
+    usage: /<command> [playername] <msg>
+  msg:
+    description: send a message
+    permission: real.talk.message
+    usage: /<command> [playername] <msg>
+  m:
+    description: send a message
+    permission: real.talk.message
+    usage: /<command> [playername] <msg>
+  t:
+    description: send a message
+    permission: real.talk.message
+    usage: /<command> [playername] <msg>
+  tell:
+    description: send a message
+    permission: real.talk.message
+    usage: /<command> [playername] <msg>
+  me:
+    description: show how you feel
+    permission: real.talk.me
+    usage: /<command> <msg>
+  clear:
+    description: clear chat
+permissions:
+  real.talk.admin:
+    description: Gives access to all DirectChat commands
+    default: op
+    children:
+      real.talk.say: true
+      real.talk.edit: true
+  real.talk.edit:
+    description: 'edit the config'
+    default: op
+  real.talk.message:
+    description: 'send messages'
+    default: op
+  real.talk.message.color:
+    description: 'send color in your messages'
+    default: op
+  real.talk.me:
+    description: 'express yourself'
+    default: op
+    

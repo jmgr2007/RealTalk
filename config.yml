@@ -1,0 +1,30 @@
+messages:
+  login: '&c&n%username% has joined the game'
+  logout: '&c&n%username% has left the game!'
+# if you dont use permissions then get rid of the
+# the default and op cannot be deleted, they are last resorts for if there is no custom group assigned to them
+# every "g#" has a permission assigned for it
+chat:
+  op:
+    prefix: '&f[&4OP&f] [&5'
+    suffix: '&f]&c'
+  default:
+    prefix: '&f[&aDefault&f] [&6'
+    suffix: '&f]&b'
+  g1:
+    prefix: '&f[&4Owner&f] [&5'
+    suffix: '&f]&c'
+  g2:
+    prefix: '&f[&5Co-Owner&f] [&4'
+    suffix: '&f]&c'
+  g3:
+    prefix: '&f[&cAdmin&f] [&5'
+    suffix: '&f]&d'
+# leave a space between the prefix suffix stuff and message
+# for every customgroup there should be one group named g in the events(like if there are two there should be g1 and g2)
+# devbug makes it where when I (jmgr2007) gets online he gets debugging information for everything done
+options:
+  noise: false
+  format: '{PREFIX}{NAME}{SUFFIX} {MESSAGE}'
+  customgroups: 3
+  devbug: true
