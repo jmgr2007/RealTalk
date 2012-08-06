@@ -3,7 +3,7 @@ website:
 name: RealTalk
 main: jmgr2007.bukkit.RealTalk.RealTalk
 database: false
-version: 1.6.1
+version: 1.0.0
 
 commands:
   rtalk:
